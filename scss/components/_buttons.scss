@@ -17,7 +17,6 @@
         &:nth-child(3) {animation-delay: 4.4s;}
     }
 }
-
 .button1 {
     position: relative;
     list-style-type: none;
@@ -26,14 +25,12 @@
     transition: background-color 0.4s ease-in-out,box-shadow 0.4s ease-in-out;
     height: 8 * $size-unit;
 }
-
 .languages__text {
     display: block;
     font-size: 4 * $size-unit;
     color: $color-light;
     transition: font-size 0.4s ease-out;
 }
-
 .button1::before, .button1::after{
     position: absolute;
     content: "";
@@ -42,7 +39,6 @@
     width: 0%;
     transition: width 0.2s ease-in-out;
 }
-
 .languages__text::before, .languages__text::after {
     position: absolute;
     content: "";
@@ -51,7 +47,6 @@
     width: 2px;
     transition: height 0.2s ease-in-out;
 }
-
 .button1:hover::before, .button1:hover::after {
     width: 100%
 }

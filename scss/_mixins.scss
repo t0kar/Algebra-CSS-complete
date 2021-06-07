@@ -2,7 +2,6 @@
     animation: header-slide-in 3s ease-in-out 1;
     animation-fill-mode: forwards;
 }
-
 @mixin content-animation {
     animation: content-appear 1s ease-in-out 1;
     animation-fill-mode: forwards;

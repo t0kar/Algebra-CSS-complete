@@ -18,13 +18,13 @@
         font-size: 5 * $size-unit;
     }
     .languages .button1 {
-        flex-basis: calc(50% - 2 * $size-unit);
+        flex-basis: 50% - 2 * $size-unit;
         margin: $size-unit;
     }
 }
 @media screen and (min-width: 1025px) {
     .languages .button1 {
-        flex-basis: calc(33% - 2 * 2 *$size-unit);
+        flex-basis: 33% - 2 * 2 *$size-unit;
         margin: 2 * $size-unit;
     }
 }
