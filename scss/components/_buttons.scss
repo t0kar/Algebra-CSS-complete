@@ -1,0 +1,103 @@
+.languages {    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: $width;
+
+    .button1 {
+        @include content-animation();
+        border: none;
+        width: 256px;
+        padding: 8px;
+        opacity: 0%;
+
+        &:nth-child(1) {animation-delay: 4s;}
+        &:nth-child(2) {animation-delay: 4.2s;}
+        &:nth-child(3) {animation-delay: 4.4s;}
+    }
+}
+
+.button1 {
+    position: relative;
+    font-size: 4 * $size-unit;
+    color: $color-light;
+    list-style-type: none;
+    background: $color-background;
+    cursor: pointer;
+}
+
+.languages__text {
+    display: block;
+}
+
+.button1::before, .button1::after{
+    position: absolute;
+    content: "";
+    background-color: $color-light;
+    height: 2px;
+    width: 0%;
+    transition: width 0.2s ease-in-out;
+}
+
+.languages__text::before, .languages__text::after {
+    position: absolute;
+    content: "";
+    background-color: $color-light;
+    height: 0%;
+    width: 2px;
+    transition: height 0.2s ease-in-out;
+}
+
+.button1:hover::before, .button1:hover::after {
+    width: 100%
+}
+
+.button1:hover .languages__text::before, .button1:hover .languages__text::after {
+    height: 100%;
+}
+
+.button1:hover::after {
+    left: 0px;
+    bottom: 0px;
+    transition-delay: 0s;
+}
+.button1:hover .languages__text::after {
+    right: 0px;
+    bottom: 0px;
+    transition-delay: 0.1s;
+}
+.button1:hover::before {
+    right: 0px;
+    top: 0px;
+    transition-delay: 0.2s;
+}
+.button1:hover .languages__text::before {
+    left: 0px;
+    top: 0px;
+    transition-delay: 0.3s;
+}
+.button1:hover {
+    transition-delay: 0.4s;
+    background-color: $color-button;
+}
+.button1:after {
+    left: 0px;
+    bottom: 0px;
+    transition-delay: 0.3s;
+}
+.languages__text::after {
+    right: 0px;
+    bottom: 0px;
+    transition-delay: 0.2s;
+}
+.button1::before {
+    right: 0px;
+    top: 0px;
+    transition-delay: 0.1s;
+}
+.languages__text::before {
+    left: 0px;
+    top: 0px;
+    transition-delay: 0s;
+}

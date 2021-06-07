@@ -1,0 +1,10 @@
+h1 {
+    @include content-animation();
+    font-size: 7 * $size-unit;
+    color: $color-light;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+    opacity: 0;
+    animation-delay: 3s;
+}

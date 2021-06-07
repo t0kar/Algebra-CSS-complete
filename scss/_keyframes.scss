@@ -1,0 +1,21 @@
+@keyframes header-slide-in {
+    0% {
+        transform: translate(-33%, 0);
+    }
+    50% {
+        text-shadow: 0 2px 20px $color-shadow;
+    }
+    100% {
+        transform: translate(0%, 0);
+        text-shadow: 0 2px 20px white;
+    }
+}
+
+@keyframes content-appear {
+    form {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
