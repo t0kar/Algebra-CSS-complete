@@ -3,11 +3,13 @@
         transform: translate(-33%, 0);
     }
     50% {
-        text-shadow: 0 2px 20px $color-shadow;
+        text-shadow: 2px 2px 40px $color-light;
+        opacity: 0%;
     }
     100% {
         transform: translate(0%, 0);
-        text-shadow: 0 2px 20px white;
+        opacity: 100%;
+        color: $color-light;
     }
 }
 

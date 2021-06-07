@@ -20,15 +20,18 @@
 
 .button1 {
     position: relative;
-    font-size: 4 * $size-unit;
-    color: $color-light;
     list-style-type: none;
     background: $color-background;
     cursor: pointer;
+    transition: background-color 0.4s ease-in-out,box-shadow 0.4s ease-in-out;
+    height: 8 * $size-unit;
 }
 
 .languages__text {
     display: block;
+    font-size: 4 * $size-unit;
+    color: $color-light;
+    transition: font-size 0.4s ease-out;
 }
 
 .button1::before, .button1::after{
@@ -79,7 +82,14 @@
 }
 .button1:hover {
     transition-delay: 0.4s;
-    background-color: $color-button;
+    box-shadow: 0px 0px 15px $color-light;
+
+    &:nth-child(1) {background-color: $color-button;}
+    &:nth-child(2) {background-color: $color-button-2;}
+    &:nth-child(3) {background-color: $color-button-3;}
+}
+.button1:hover .languages__text {
+    font-size: 4.5 * $size-unit;
 }
 .button1:after {
     left: 0px;
